@@ -16,7 +16,7 @@ const Navigation = () => (
     </li>
     <li>
       <Link
-        to="/page-explore"
+        to="/explore"
         style={{
           color: `white`,
           textDecoration: `none`,
@@ -27,7 +27,7 @@ const Navigation = () => (
     </li>
     <li>
       <Link
-        to="/page-plant"
+        to="/plant"
         style={{
           color: `white`,
           textDecoration: `none`,
