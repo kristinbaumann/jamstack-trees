@@ -7,7 +7,7 @@ const Navigation = () => (
       <Link
         to="/"
         style={{
-          color: `white`,
+          color: `black`,
           textDecoration: `none`,
         }}
       >
@@ -18,7 +18,7 @@ const Navigation = () => (
       <Link
         to="/explore"
         style={{
-          color: `white`,
+          color: `black`,
           textDecoration: `none`,
         }}
       >
@@ -29,7 +29,7 @@ const Navigation = () => (
       <Link
         to="/plant"
         style={{
-          color: `white`,
+          color: `black`,
           textDecoration: `none`,
         }}
       >

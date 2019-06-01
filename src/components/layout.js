@@ -5,9 +5,9 @@ import Header from "./header"
 import Footer from "./footer"
 import "./layout.css"
 
-const Layout = ({ children }) => (
+const Layout = props => (
   <div>
-    <Header />
+    {props.pathname !== "/" ? <Header /> : null}
     <div
       style={{
         margin: `0 auto`,
@@ -16,14 +16,15 @@ const Layout = ({ children }) => (
         paddingTop: 0,
       }}
     >
-      <main>{children}</main>
-      <Footer />
+      <main>{props.children}</main>
+      {/* <Footer /> */}
     </div>
   </div>
 )
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  pathname: PropTypes.string.isRequired,
 }
 
 export default Layout
