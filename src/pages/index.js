@@ -1,17 +1,23 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import Navigation from "../components/navigation"
+import treeImage from "../images/trees1.jpg"
+
+import "../styles/home.css"
 
 const IndexPage = props => (
   <Layout pathname={props.location.pathname}>
-    <Navigation />
-    <h1>Trees.</h1>
-    <p>Button - Plant</p>
-    <p>Text Link - Explor</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <div
+      className="page-home"
+      style={{
+        backgroundImage: `url(${treeImage})`,
+      }}
+    >
+      <Navigation />
+      <h1>Trees.</h1>
+      <p>Button - Plant</p>
+      <p>Text Link - Explore</p>
     </div>
   </Layout>
 )

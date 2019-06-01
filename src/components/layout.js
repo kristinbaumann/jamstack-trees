@@ -2,23 +2,15 @@ import React from "react"
 import PropTypes from "prop-types"
 
 import Header from "./header"
-import Footer from "./footer"
-import "./layout.css"
+// import Footer from "./footer"
+import "../styles/layout.css"
+import "../styles/main.css"
 
 const Layout = props => (
   <div>
     {props.pathname !== "/" ? <Header /> : null}
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `0px 1.0875rem 1.45rem`,
-        paddingTop: 0,
-      }}
-    >
-      <main>{props.children}</main>
-      {/* <Footer /> */}
-    </div>
+    <main className="main">{props.children}</main>
+    {/* <Footer /> */}
   </div>
 )
 
