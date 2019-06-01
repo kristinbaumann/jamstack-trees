@@ -5,6 +5,7 @@ import Navigation from "../components/navigation"
 import treeImage from "../images/trees1.jpg"
 
 import "../styles/home.css"
+import Checkout from "../components/checkout"
 
 const IndexPage = props => (
   <Layout pathname={props.location.pathname}>
@@ -18,6 +19,7 @@ const IndexPage = props => (
       <h1>Trees.</h1>
       <p>Button - Plant</p>
       <p>Text Link - Explore</p>
+      <Checkout />
     </div>
   </Layout>
 )
