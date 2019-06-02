@@ -1,41 +1,19 @@
-import { Link } from "gatsby"
 import React from "react"
+import { Link } from "gatsby"
+
+const navItems = [
+  { name: "Home", path: "/" },
+  { name: "Explore", path: "/explore" },
+  { name: "Plant", path: "/plant" },
+]
 
 const Navigation = () => (
-  <ul>
-    <li>
-      <Link
-        to="/"
-        style={{
-          color: `red`,
-          textDecoration: `none`,
-        }}
-      >
-        Home
-      </Link>
-    </li>
-    <li>
-      <Link
-        to="/explore"
-        style={{
-          color: `red`,
-          textDecoration: `none`,
-        }}
-      >
-        Explore
-      </Link>
-    </li>
-    <li>
-      <Link
-        to="/plant"
-        style={{
-          color: `red`,
-          textDecoration: `none`,
-        }}
-      >
-        Plant
-      </Link>
-    </li>
+  <ul className="navigation">
+    {navItems.map(el => (
+      <li className="navigation-item">
+        <Link to={el.path}>{el.name}</Link>
+      </li>
+    ))}
   </ul>
 )
 

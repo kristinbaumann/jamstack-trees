@@ -4,7 +4,9 @@ import Layout from "../components/layout"
 
 const PageThankyou = props => (
   <Layout pathname={props.location.pathname}>
-    <p>Thank you!</p>
+    <div className="page container">
+      <p>Thank you!</p>
+    </div>
   </Layout>
 )
 

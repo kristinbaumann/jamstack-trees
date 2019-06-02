@@ -6,8 +6,8 @@ import Layout from "../components/layout"
 const PageExplore = props => {
   const posts = props.data.allContentfulPost.edges
   return (
-    <Layout pathname={props.location.pathname} style={{}}>
-      <div style={{ color: "black" }}>
+    <Layout pathname={props.location.pathname}>
+      <div className="page container">
         <p>Page Explore</p>
         <ul>
           {posts.map(({ node }) => (

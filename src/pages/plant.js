@@ -35,7 +35,7 @@ const ProductList = () => (
 
 const PagePlant = props => (
   <Layout pathname={props.location.pathname}>
-    <div style={{ color: "black" }}>
+    <div className="page container">
       <p>Page Plant</p>
       <ProductList />
       <Checkout />

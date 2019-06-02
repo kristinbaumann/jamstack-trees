@@ -1,25 +1,28 @@
 import React from "react"
 
 import Layout from "../components/layout"
-import Navigation from "../components/navigation"
 import treeImage from "../images/trees1.jpg"
-
-import "../styles/home.css"
-import Checkout from "../components/checkout"
+import { Link } from "gatsby"
 
 const IndexPage = props => (
   <Layout pathname={props.location.pathname}>
     <div
-      className="page-home"
+      className="page background-wrapper"
       style={{
         backgroundImage: `url(${treeImage})`,
       }}
     >
-      <Navigation />
-      <h1>Trees.</h1>
-      <p>Button - Plant</p>
-      <p>Text Link - Explore</p>
-      <Checkout />
+      <div className="container">
+        <div className="box">
+          <h1 className="teaser">Trees.</h1>
+          <button className="button">
+            <Link to="/plant">Plant a Tree</Link>
+          </button>
+          <p className="text-link">
+            <Link to="/plant">Explore more</Link>
+          </p>
+        </div>
+      </div>
     </div>
   </Layout>
 )
