@@ -55,9 +55,15 @@ class ProductItem extends Component {
 
 class ProductList extends Component {
   state = {
-    stripe: window.Stripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY, {
-      betas: ["checkout_beta_4"],
-    }),
+    stripe: null,
+  }
+
+  componentDidMount() {
+    this.setState({
+      stripe: window.Stripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY, {
+        betas: ["checkout_beta_4"],
+      }),
+    })
   }
   render() {
     return (
