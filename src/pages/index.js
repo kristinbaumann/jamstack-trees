@@ -15,12 +15,12 @@ const IndexPage = props => (
       <div className="container">
         <div className="box">
           <h1 className="teaser">Trees.</h1>
-          <button className="button">
-            <Link to="/plant">Plant a Tree</Link>
-          </button>
-          <p className="text-link">
-            <Link to="/plant">Explore more</Link>
-          </p>
+          <Link className="button" to="/plant">
+            Plant a Tree
+          </Link>
+          <Link className="text-link" to="/plant">
+            Explore more
+          </Link>
         </div>
       </div>
     </div>

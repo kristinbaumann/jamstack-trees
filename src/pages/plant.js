@@ -36,7 +36,6 @@ const ProductList = () => (
 const PagePlant = props => (
   <Layout pathname={props.location.pathname}>
     <div className="page container">
-      <p>Page Plant</p>
       <ProductList />
       <Checkout />
     </div>

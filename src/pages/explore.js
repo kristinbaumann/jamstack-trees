@@ -8,7 +8,6 @@ const PageExplore = props => {
   return (
     <Layout pathname={props.location.pathname}>
       <div className="page container">
-        <p>Page Explore</p>
         <ul>
           {posts.map(({ node }) => (
             <li key={node.id}>{node.headline}</li>

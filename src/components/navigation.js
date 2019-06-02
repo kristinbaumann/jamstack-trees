@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 
 const navItems = [
-  { name: "Home", path: "/" },
+  // { name: "Home", path: "/" },
   { name: "Explore", path: "/explore" },
   { name: "Plant", path: "/plant" },
 ]
