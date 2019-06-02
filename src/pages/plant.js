@@ -32,15 +32,22 @@ class ProductItem extends Component {
   render() {
     const { sku } = this.props
     return (
-      <div>
-        <p>{sku.attributes.name}</p>
-        <p>{this.formatPrice(sku.price, sku.currency)}</p>
-        <button
-          className="button"
+      <div className="product-item">
+        <img
+          src={sku.image}
+          alt={sku.attributes.name}
           onClick={event => this.redirectToCheckout(event, sku.id)}
-        >
-          Plant
-        </button>
+        />
+        <div className="product-item-text">
+          <p>{sku.attributes.name}</p>
+          {/* <p></p> */}
+          <button
+            className="button button-secondary"
+            onClick={event => this.redirectToCheckout(event, sku.id)}
+          >
+            Plant ({this.formatPrice(sku.price, sku.currency)})
+          </button>
+        </div>
       </div>
     )
   }
@@ -66,17 +73,18 @@ class ProductList extends Component {
                   attributes {
                     name
                   }
+                  image
                 }
               }
             }
           }
         `}
         render={({ skus }) => (
-          <>
+          <div className="product-list">
             {skus.edges.map(({ node: sku }) => (
               <ProductItem key={sku.id} sku={sku} stripe={this.state.stripe} />
             ))}
-          </>
+          </div>
         )}
       />
     )

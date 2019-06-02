@@ -54,6 +54,8 @@ body {
 .button.button-secondary {
   background-color: #333;
   color: white;
+  margin-bottom: 0;
+  font-size: 1.25rem;
 }
 
 .button:hover {
@@ -178,4 +180,41 @@ a.text-link:hover {
 
 .post .subtitle a {
   color: #333;
+}
+
+/* Plant */
+
+.product-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product-item {
+  flex-basis: 45%;
+  flex-grow: 0;
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 430px) {
+  .product-item {
+    flex-basis: 100%;
+  }
+}
+
+.product-item-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-item-text p {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.product-item img {
+  border-radius: 4px;
 }
