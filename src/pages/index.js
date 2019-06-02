@@ -15,7 +15,7 @@ const IndexPage = props => (
       <div className="container">
         <div className="box">
           <h1 className="teaser">Trees.</h1>
-          <Link className="button" to="/plant">
+          <Link className="button button-primary" to="/plant">
             Plant a Tree
           </Link>
           <Link className="text-link" to="/explore">
