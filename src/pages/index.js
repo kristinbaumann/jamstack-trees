@@ -18,7 +18,7 @@ const IndexPage = props => (
           <Link className="button" to="/plant">
             Plant a Tree
           </Link>
-          <Link className="text-link" to="/plant">
+          <Link className="text-link" to="/explore">
             Explore more
           </Link>
         </div>

@@ -9,8 +9,8 @@ const navItems = [
 
 const Navigation = () => (
   <ul className="navigation">
-    {navItems.map(el => (
-      <li className="navigation-item">
+    {navItems.map((el, elIndex) => (
+      <li className="navigation-item" key={elIndex}>
         <Link to={el.path}>{el.name}</Link>
       </li>
     ))}

@@ -1,5 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Layout from "../components/layout"
 
@@ -8,9 +9,19 @@ const PageExplore = props => {
   return (
     <Layout pathname={props.location.pathname}>
       <div className="page container">
-        <ul>
+        <ul className="posts">
           {posts.map(({ node }) => (
-            <li key={node.id}>{node.headline}</li>
+            <li className="post" key={node.id}>
+              <div className="post-image-wrapper">
+                <img src={node.image.file.url} alt={node.headline} />
+              </div>
+              <div className="post-text-wrapper">
+                <p className="title">{node.headline}</p>
+                <span className="subtitle">
+                  {documentToReactComponents(node.source.json)}
+                </span>
+              </div>
+            </li>
           ))}
         </ul>
       </div>
@@ -27,6 +38,15 @@ export const pageQuery = graphql`
         node {
           id
           headline
+          image {
+            id
+            file {
+              url
+            }
+          }
+          source {
+            json
+          }
         }
       }
     }
