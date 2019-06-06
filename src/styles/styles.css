@@ -218,3 +218,20 @@ a.text-link:hover {
 .product-item img {
   border-radius: 4px;
 }
+
+/* Footer */
+.footer-wrapper {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  color: #333;
+  text-align: center;
+  padding: 0.2rem 0;
+  font-size: 0.7rem;
+  box-shadow: 0px 1px 4px 4px rgba(0, 0, 0, 0.08);
+}
+.footer-wrapper a {
+  color: #333;
+}
