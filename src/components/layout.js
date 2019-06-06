@@ -10,7 +10,7 @@ import "../styles/styles.css"
 const Layout = props => (
   <>
     <Helmet>
-      <title>My Site Title</title>
+      <title>JAMstack Trees</title>
       <link
         href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
         rel="stylesheet"
