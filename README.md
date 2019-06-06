@@ -2,6 +2,8 @@
 
 # JAMstack Trees :evergreen_tree:
 
+![Screenshot](https://raw.githubusercontent.com/kristinbaumann/jamstack-trees/master/screenshot.png)
+
 ## Why and What?
 
 This project exemplarily shows the principle of the JAMstack with the beauty of trees :evergreen_tree: :deciduous_tree: :palm_tree:
@@ -20,10 +22,6 @@ So you can manage and update static content (here awesome tree images) with Cont
 You can also (fake) plant a tree by doing a payment via Stripe, see the dynamic ecommerce section here: https://jamstack-trees.netlify.com/plant.
 
 Used tools and services: Github, Gatsby, React, Contentful, GraphQL, Stripe, Netlify ...
-
-Screenshots:
-
-TODO
 
 ## Setup
 
