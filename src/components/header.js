@@ -1,6 +1,5 @@
-import { Link } from "gatsby"
 import React from "react"
-import Navigation from "./navigation"
+import { Link } from "gatsby"
 import treeImage from "../images/trees1.jpg"
 
 const Header = () => (
@@ -14,7 +13,14 @@ const Header = () => (
       <h1>
         <Link to="/">Trees.</Link>
       </h1>
-      <Navigation />
+      <ul className="navigation">
+        <li className="navigation-item">
+          <Link to="/explore">Explore</Link>
+        </li>
+        <li className="navigation-item">
+          <Link to="/plant">Plant</Link>
+        </li>
+      </ul>
     </div>
   </header>
 )

@@ -1,10 +1,10 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import treeImage from "../images/trees1.jpg"
 import { Link } from "gatsby"
 
-const IndexPage = props => (
+const PageIndex = props => (
   <Layout pathname={props.location.pathname}>
     <div
       className="page background-wrapper"
@@ -27,4 +27,4 @@ const IndexPage = props => (
   </Layout>
 )
 
-export default IndexPage
+export default PageIndex

@@ -1,8 +1,8 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 
-const PageThankyou = props => (
+const PageThanks = props => (
   <Layout pathname={props.location.pathname}>
     <div className="page container">
       <p>Thank you!</p>
@@ -10,4 +10,4 @@ const PageThankyou = props => (
   </Layout>
 )
 
-export default PageThankyou
+export default PageThanks
