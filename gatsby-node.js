@@ -1,11 +1,7 @@
-// const Promise = require("bluebird")
 const path = require("path")
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage } = actions
-
   return new Promise((resolve, reject) => {
-    const contentPost = path.resolve("./src/templates/content-post.js")
     resolve(
       graphql(
         `
@@ -27,9 +23,9 @@ exports.createPages = ({ graphql, actions }) => {
 
         const posts = result.data.allContentfulPost.edges
         posts.forEach(post => {
-          createPage({
+          actions.createPage({
             path: `/explore/${post.node.slug}/`,
-            component: contentPost,
+            component: path.resolve("./src/templates/content-post.js"),
             context: {
               slug: post.node.slug,
             },
