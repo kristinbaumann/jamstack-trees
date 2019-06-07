@@ -10,6 +10,7 @@ const ContentList = () => (
           edges {
             node {
               id
+              slug
               headline
               image {
                 id
@@ -28,7 +29,7 @@ const ContentList = () => (
     render={({ posts }) => (
       <ul className="posts">
         {posts.edges.map(({ node: post }) => (
-          <ContentItem post={post} key={post.id} />
+          <ContentItem post={post} key={post.id} showLink={true} />
         ))}
       </ul>
     )}

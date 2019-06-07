@@ -184,8 +184,13 @@ a.text-link:hover {
   color: #333;
 }
 
-/* Plant */
+a.back-link {
+  color: #333;
+  display: block;
+  margin-bottom: 0.5rem;
+}
 
+/* Plant */
 .product-list {
   display: flex;
   flex-direction: row;
