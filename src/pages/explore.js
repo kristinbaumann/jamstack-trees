@@ -1,44 +1,13 @@
 import React from "react"
-import { graphql } from "gatsby"
 import Layout from "../structure/layout"
-import ContentPost from "../components/ContentPost"
+import ContentList from "../components/ContentList"
 
-const PageExplore = props => {
-  const allPosts = props.data.allContentfulPost.edges
-
-  return (
-    <Layout pathname={props.location.pathname}>
-      <div className="page container">
-        <ul className="posts">
-          {allPosts.map(({ node }) => (
-            <ContentPost node={node} key={node.id} />
-          ))}
-        </ul>
-      </div>
-    </Layout>
-  )
-}
+const PageExplore = props => (
+  <Layout pathname={props.location.pathname}>
+    <div className="page container">
+      <ContentList />
+    </div>
+  </Layout>
+)
 
 export default PageExplore
-
-export const pageQuery = graphql`
-  query PostQuery {
-    allContentfulPost {
-      edges {
-        node {
-          id
-          headline
-          image {
-            id
-            file {
-              url
-            }
-          }
-          source {
-            json
-          }
-        }
-      }
-    }
-  }
-`
