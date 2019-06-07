@@ -1,6 +1,6 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import Layout from "../structure/layout"
 import { Link } from "gatsby"
 
 const PageIndex = props => (
