@@ -9,7 +9,7 @@ class ProductList extends Component {
 
   componentDidMount() {
     this.setState({
-      stripe: window.Stripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY, {
+      stripe: window.Stripe(process.env.STRIPE_PUBLISHABLE_KEY, {
         betas: ["checkout_beta_4"],
       }),
     })
