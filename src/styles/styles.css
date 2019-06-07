@@ -27,6 +27,7 @@ body {
 .background-wrapper {
   height: 100vh;
   background-size: cover;
+  background-image: url("../images/trees1.jpg");
 }
 
 .teaser {
@@ -79,6 +80,7 @@ a.text-link:hover {
 .header {
   height: "150px";
   background-size: cover;
+  background-image: url("../images/trees1.jpg");
 }
 
 .header-wrapper {

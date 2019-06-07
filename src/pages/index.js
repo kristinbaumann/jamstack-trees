@@ -1,17 +1,11 @@
 import React from "react"
 
 import Layout from "../components/Layout"
-import treeImage from "../images/trees1.jpg"
 import { Link } from "gatsby"
 
 const PageIndex = props => (
   <Layout pathname={props.location.pathname}>
-    <div
-      className="page background-wrapper"
-      style={{
-        backgroundImage: `url(${treeImage})`,
-      }}
-    >
+    <div className="page background-wrapper">
       <div className="container">
         <div className="box">
           <h1 className="teaser">Trees.</h1>

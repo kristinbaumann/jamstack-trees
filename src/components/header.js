@@ -1,14 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import treeImage from "../images/trees1.jpg"
 
 const Header = () => (
-  <header
-    className="header"
-    style={{
-      backgroundImage: `url(${treeImage})`,
-    }}
-  >
+  <header className="header">
     <div className="container header-wrapper">
       <h1>
         <Link to="/">Trees.</Link>
