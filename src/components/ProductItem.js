@@ -6,10 +6,8 @@ class ProductItem extends Component {
     event.preventDefault()
     const { error } = await this.props.stripe.redirectToCheckout({
       items: [{ sku, quantity: 1 }],
-      successUrl: process.env.URL
-        ? `${process.env.URL}/thanks/`
-        : `http://localhost:8000/thanks/`,
-      cancelUrl: process.env.URL || `http://localhost:8000/`,
+      successUrl: process.env.STRIPE_REDIRECT_URL,
+      cancelUrl: process.env.STRIPE_REDIRECT_URL_FAILURE,
     })
 
     if (error) {
