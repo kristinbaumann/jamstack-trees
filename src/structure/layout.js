@@ -7,7 +7,7 @@ import Footer from "./footer"
 import "../styles/layout.css"
 import "../styles/styles.css"
 
-const layout = props => (
+const Layout = props => (
   <>
     <Helmet>
       <title>JAMstack Trees</title>
@@ -24,9 +24,9 @@ const layout = props => (
   </>
 )
 
-layout.propTypes = {
+Layout.propTypes = {
   children: PropTypes.node.isRequired,
   pathname: PropTypes.string.isRequired,
 }
 
-export default layout
+export default Layout

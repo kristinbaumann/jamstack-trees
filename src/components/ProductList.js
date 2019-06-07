@@ -14,6 +14,7 @@ class ProductList extends Component {
       }),
     })
   }
+
   render() {
     return (
       <StaticQuery
